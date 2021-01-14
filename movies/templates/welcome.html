@@ -8,26 +8,41 @@
 
 <body>
 
-    <h1>Netflix</h1>
+    <!-- <h1>Netflix</h1> -->
 
-    <div class="  banner text-center">
+        <div class="  banner text-center">
     <div class="header">
         <div class="container image">
             <h2 id="category">Unlimited movies and shows.</h2>
      <br>
     <small>watch any time and anywhere .</small>
+    <p>Ready to watch? Enter your email to create or restart your membership.
+    </p>
+    <div class="container-fluid">
+
+         <form  action="{%url 'welcome'%}" method="post">
+            {%csrf_token%}
+
+            {% bootstrap_form letterForm layout='inline' width="150px" %}
+            <input type="submit" value="Subscribe">
+
+        </form>
     </div>
     </div>
 </div>
+        
+        
+         
 
-<hr>
-<div class="header2">
-    <h3>Enjoy on your Tv.</h3>
-    <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, laptops and more</p>
+        </div>
+        <hr>
+        <div class="header2">
+            <h3>Enjoy on your Tv.</h3>
+            <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, laptops and more</p>
 
-    <img src="{% static 'images/tv.jpg' %}" alt="" >
+            <img src="{% static 'images/tv.jpg' %}" alt="" >
 
-    
-</div>
-</body>
-{% endblock%}
+            
+        </div>
+        </body>
+        {% endblock%}

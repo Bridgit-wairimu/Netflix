@@ -57,3 +57,8 @@ class Image(models.Model):
 
     class Meta:
         ordering = ['name']
+
+
+class MoviesLetterRecipients(models.Model):
+    name = models.CharField(max_length = 30)
+    email = models.EmailField()

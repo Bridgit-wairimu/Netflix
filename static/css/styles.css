@@ -5,6 +5,7 @@ h1{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: oblique;
 }
+
 body{
     background-color: black;
 }
@@ -15,7 +16,7 @@ body{
     background-repeat:no-repeat;
     position: relative;
     background-size:cover;
-    height: 320px;
+    height: 350px;
 }
 h2{
     color: white;
@@ -42,5 +43,29 @@ p{
     color: white;
     padding: 5px;
     text-align: center;
+
+}
+
+li{
+    list-style: none;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+a{
+    text-decoration: none;
+    color: red;
+}
+a:hover{
+    background-color: black;
+    color: white;
+}
+
+input[type="submit"]{
+    background-color: red;
+    color: white;
+    border-style: solid;
+    border-color: white;
 
 }

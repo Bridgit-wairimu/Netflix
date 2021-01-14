@@ -1,0 +1,33 @@
+{%extends 'base.html'%}
+{% load bootstrap3 %}
+{% load static%}
+
+{% block content %}
+
+{{block.super}}
+
+<body>
+
+    <h1>Netflix</h1>
+
+    <div class="  banner text-center">
+    <div class="header">
+        <div class="container image">
+            <h2 id="category">Unlimited movies and shows.</h2>
+     <br>
+    <small>watch any time and anywhere .</small>
+    </div>
+    </div>
+</div>
+
+<hr>
+<div class="header2">
+    <h3>Enjoy on your Tv.</h3>
+    <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, laptops and more</p>
+
+    <img src="{% static 'images/tv.jpg' %}" alt="" >
+
+    
+</div>
+</body>
+{% endblock%}

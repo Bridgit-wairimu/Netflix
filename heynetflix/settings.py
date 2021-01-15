@@ -76,7 +76,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-            ],
+                'django.template.context_processors.media',
+],
         },
     },
 ]
@@ -136,3 +137,10 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
+
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
+TRENDING = 'https://api.themoviedb.org/3/movie/550?api_key=fc3a024559a41bf4c9130f6e3345d852'
